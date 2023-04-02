@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root{
+    --backColor: #7a7a7a;
+    --textColor: #ffffff;
+    --shadowOne: #6e6e6e;
+    --shadowTwo: #868686;
+    --hoverShadowOne: #626262;
+    --hoverShadowTwo: #929292;
+}
+body {
+    height: 100vh;
+    background-color: var(--backColor);
+}
+body, .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+p, input, button {
+    color: var(--textColor);
+    text-align: center;
+}
+.main, input, button {
+    border-radius: 40px;
+    border: none;
+}
+.main, button {
+    box-shadow:  5px 5px 10px var(--shadowOne), -5px -5px 10px var(--shadowTwo);
+}
+.main, button, input, button:hover {
+    background: var(--backColor);
+}
+p {
+    font-size: 4vh;
+    margin: 25px 50px;
+}
+input {
+    width: 80%;
+    height: 4vh;
+    font-size: 3vh;
+    outline: none;
+    box-shadow: inset 5px 5px 10px var(--shadowOne), inset -5px -5px 10px var(--shadowTwo);
+}
+button {
+    height: 5vh;
+    font-size: 2.5vh;
+    margin: 30px;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+button:hover {
+    box-shadow:  8px 8px 20px var(--hoverShadowOne), -8px -8px 20px var(--hoverShadowTwo);
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+    .main {
+        width: 90%;
+    }
+}
