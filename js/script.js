@@ -20,5 +20,6 @@ function checkTest() {
         result++;
     }
 
-    alert("\nNumber of correct answers: " + result + "\n\nCongratulations!");
+    if (result != 3) alert("\nNumber of correct answers: " + result + "\n\nTry harder!");
+    else alert("\nNumber of correct answers: " + result + "\n\nCongratulations!");
 }
